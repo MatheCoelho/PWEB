@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   
+  #simples {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+  }
+   
+  h2 {
+    font-size: 24px;
+    color: white;
+    position: relative;
+  }
+   
+  h2::before {
+    content: "420px";
+  }
+   
+  @media (min-width: 421px) and (max-width: 768px) {
+    #simples { background-color: orange; }
+    h2::before { content: "768px"; }
+  }
+   
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #simples { background-color: rgb(216, 52, 167); }
+    h2::before { content: "1024px"; }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1080px) {
+    #simples { background-color: red; }
+    h2::before { content: "1080px"; }
+  }
+
+  @media (min-width: 1081px) and (max-width: 1366px) {
+    #simples { background-color: purple; }
+    h2::before { content: "1366px"; }
+  }
+
+  @media (min-width: 1367px) and (max-width: 1920px) {
+    #simples { background-color: yellow; }
+    h2::before { content: "1920px"; }
+  }
+
+  @media (min-width: 1921px) {
+    #simples { background-color: green; }
+    h2::before { content: "MAIOR QUE 1920PX"; }
+  }

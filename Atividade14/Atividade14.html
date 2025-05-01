@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformar Texto</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Texto para Transformar</h2>
+
+  <input type="text" id="texto"><br><br>
+
+  <input type="radio" name="opcao" onclick="maiuscula()"> MAIÚSCULA <br>
+  <input type="radio" name="opcao" onclick="minuscula()"> minúscula
+
+  <script>
+    let texto = document.getElementById("texto");
+
+    function maiuscula() {
+      texto.value = texto.value.toUpperCase();
+    }
+
+    function minuscula() {
+      texto.value = texto.value.toLowerCase();
+    }
+  </script>
+
+</body>
+</html>

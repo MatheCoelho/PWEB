@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+.resultados {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.resultados ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resultados ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+.resultados h2 {
+    font-size: 1.8em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.resultados h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .resultados h2 {
+        font-size: 1.5em;
+    }
+
+    .resultados h3 {
+        font-size: 1em;
+    }
+}

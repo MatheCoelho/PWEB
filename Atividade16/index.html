@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha de Curso - Fatec Sorocaba</title>
+  <script>
+    function abrirCurso() {
+      let selecao = document.getElementById("cursos");
+      let curso = selecao.value;
+
+      if (curso != "") {
+        let confirmar = confirm("Deseja abrir a janela do curso selecionado?");
+        if (confirmar) {
+          window.open("cursos/" + curso + ".html", "janelaCurso", "width=600,height=300");
+        }
+      }
+    }
+  </script>
+</head>
+<body bgcolor="#ffffcc">
+  <h2 align="center">Cursos da Fatec Sorocaba</h2>
+  <center>
+    <select id="cursos" onchange="abrirCurso();">
+      <option value="">-- Selecione um curso --</option>
+      <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+      <option value="eletronica">Eletrônica Automotiva</option>
+      <option value="fabricacao">Fabricação Mecânica</option>
+      <option value="gestaoEAD">Gestão Empresarial EAD</option>
+      <option value="qualidade">Gestão da Qualidade</option>
+      <option value="logistica">Logística</option>
+      <option value="manufatura">Manufatura Avançada</option>
+      <option value="aeronaves">Manutenção de Aeronaves</option>
+      <option value="polimeros">Polímeros</option>
+      <option value="metalurgicos">Processos Metalúrgicos</option>
+      <option value="biomedicos">Sistemas Biomédicos</option>
+      <option value="projetos">Projetos Mecânicos</option>
+      <option value="amsADS">AMS Desenvolvimento de Sistemas</option>
+      <option value="amsLog">AMS Logística</option>
+    </select>
+  </center>
+</body>
+</html>
